@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Terminal</title>
+  <style>
+    body {
+      background-color: #0c0c0c;
+      color: #00ff88;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 2rem;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .terminal {
+      background-color: #000;
+      border: 2px solid #00ff88;
+      padding: 2rem;
+      max-width: 600px;
+      width: 90%;
+      box-shadow: 0 0 20px #00ff88;
+      white-space: pre-line;
+    }
+    .typewriter {
+      overflow: hidden;
+      border-right: .15em solid #00ff88;
+      white-space: nowrap;
+      animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #00ff88; }
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      color: #000;
+      background-color: #00ff88;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    a.button:hover {
+      background-color: #00cc6e;
+    }
+  </style>
+</head>
+<body>
+  <div class="terminal">
+    <div class="typewriter">
+> SYSTEM ONLINE  
+> WAKING ECHO...  
+> CONNECTION STABLE  
+> BEGIN INTERFACE
+    </div>
+    <a class="button" href="https://chatgpt.com/g/g-68944251b4388191a575539f42020c94-echo" target="_blank">ENTER TERMINAL</a>
+  </div>
+</body>
+</html>
